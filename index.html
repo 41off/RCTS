@@ -82,28 +82,29 @@ body {
 }
 
 .timer {
-    position:absolute;
-    border:3px #666666 solid;
-    border-radius: 12px;
+    position:relative;
+    border:2px #666666 solid;
+    border-radius: 8px;
     background-color: black;
-    line-height:20px;
-    font-size:20px;
+    line-height:18px;
+    font-size:16px;
     font-family:"Verdana";
     text-align:left;    
-    height: 22px;
-    width:130px;    
+    height: 20px;
+    width:110px;    
     padding-top: 0px;
     padding-left: 5px;
     padding-right:0px;
     margin-bottom: 0px;
     display: block;
-    min-width: 130px;
-    left:1.5%;    
-    top: 10%;
+    min-width: 110px;
+    left:1%;    
+    bottom: 22%;
 }
+
 .timer:hover {
     border:3px red solid;
-    border-radius: 20px;
+    border-radius: 8px;
     background-color: #555555; 
     
 }
@@ -112,7 +113,7 @@ body {
     display: block;
     left: 11%;
     right: 11%;
-    bottom: 11%;
+    bottom: 12%;
     height: 35px;
     width:78%;
     opacity: .25;
@@ -454,7 +455,7 @@ body {
     color: white;
     opacity: .15;
     transition: opacity 10s;
-    bottom: 100px;
+    bottom: 8%;
     /* top: 20% */
 -webkit-animation: fadeout 15s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadeout 15s; /* Firefox < 16 */
@@ -497,7 +498,7 @@ body {
     color: white;
     opacity: .15;
     transition: opacity 10s;
-    bottom: 40px;
+    bottom: 8%;
     /*top: 35% */
 
 -webkit-animation: fadeout 15s; /* Safari, Chrome and Opera > 12.1 */
@@ -585,7 +586,7 @@ body {
 
 #modtext{
     visibility: visible;
-    position:absolute;
+    position: absolute;
     border:2px transparent solid;
     border-radius: 10px;
     background-color: transparent;
@@ -596,21 +597,21 @@ body {
     text-decoration:blink;
     display: block;
     align-items: center;    
-    right:10%;    
+    right: 1%;    
     height: 30px;
     width:150px;    
     padding-top: 0px;
     padding-left: 2px;
-    padding-bottom: 2px;    
-    min-width: 150px;
-    left:1.5%;    
-    top: 2.5%;
+    padding-bottom: 0px;    
+    min-width: 150px;       
+    bottom: 0.0%;
 }
 
 #modtext:hover {
-    color:black;
-    background-color: white;
-    text-decoration:underline 
+    color:lime;
+    background-color: transparent;
+    text-decoration:underline yellow;
+
 }
 
 #modtext:focus {
@@ -879,8 +880,8 @@ body {
     color: red;
     font-weight: bold;
     float: right;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 18px;
     cursor: pointer;
     transition: 5s;
 }
@@ -926,7 +927,7 @@ ul{list-style-type: disc; color:red
 
          <div class="timerbar" style="text-align:center">
            <span class="closebtn2">&#11097;</span>
-            <button class="timerbutton" id="timerbuttonreset" onClick="multiReset()">Reset</button> 
+            <button class="timerbutton" id="timerbuttonreset" onClick="multiReset()">&#x21F1;Reset</button> 
             <button id="timerbutton5" class="timerbutton" onClick="multiStart()" value="Play">Toggle Play/Pause<span class="tbtext">This Video Player seems to function better with Chrome browser.</span></button>
             <button class="timerbutton" id="timerbutt1_8" onClick="multiSlow()" value="+1/8X">+1/8X<span class="tbtext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click twice to initiate.</span></button>
             <button class="timerbutton" id="timerbutt1_16" onClick="multiSuperSlow()" value="+1/16x">+1/16X</button> 
@@ -956,8 +957,8 @@ ul{list-style-type: disc; color:red
       <span class="closebtn2">&#11097;</span>
           <center>Playlist<br>Click &#x21A1; Twice<br></center>
             <left>
-               <button class="playlistbutton" onclick="on0()"><li>08-21-2020</button>
-               <button class="playlistbutton" onclick="on1()"><li>Clip 2</button>
+               <button class="playlistbutton" onclick="on0()"><li>09-04-2020</button>
+               <button class="playlistbutton" onclick="on1()"><li>08-21-2020</button>
                <button class="playlistbutton" onclick="on2()"><li>Clip 3</button>
                <button class="playlistbutton" onclick="on3()"><li>Clip 4</button>
                <button class="playlistbutton" onclick="on4()"><li>Clip 5</button>
@@ -1314,7 +1315,8 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
    }
    
   
-        var video_directory = ['https://player.vimeo.com/external/451463939.hd.mp4?s=012061f3191aa260696f4f2e65f614f1a61fbbe1&profile_id=175',
+        var video_directory = ['https://player.vimeo.com/external/456375651.hd.mp4?s=7520c7b080e81824533a96ca2fb174961242841d&profile_id=175',
+                               'https://player.vimeo.com/external/451463939.hd.mp4?s=012061f3191aa260696f4f2e65f614f1a61fbbe1&profile_id=175',
                                'https://player.vimeo.com/external/378512202.hd.mp4?s=9e492d9f40f3e3d6292410d2d1146be1fa2cc62d&profile_id=175',
                                'https://player.vimeo.com/external/408138063.hd.mp4?s=ed3a97ca55309d23e5a943c0fbcdeae001a54d27&profile_id=175',
                                'https://player.vimeo.com/external/385630268.hd.mp4?s=728efa9bd7135003708afd44f0e11ac3eba6581f&profile_id=175',
@@ -1470,8 +1472,8 @@ $("#negative3").click(function() { // button function for rewind
                        
         var btn = document.getElementById("modal");
       
-            if (btn.value == "08-21-2020") {
-              btn.value = "08-21-2020";
+            if (btn.value == "09-04-2020") {
+              btn.value = "09-04-2020";
               btn.innerHTML = '<button id="modtext">08-21-2020</button>';              
               timer.reset();
               video_player.play();
@@ -1479,8 +1481,8 @@ $("#negative3").click(function() { // button function for rewind
               timer.mode(1);
               }
             else {
-              btn.value = "08-21-2020";
-              btn.innerHTML = '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8690</button>';
+              btn.value = "09-04-2020";
+              btn.innerHTML = '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x21F1;</button>';
               timer.stop();
               video_player.pause();
               }
@@ -1493,8 +1495,8 @@ $("#negative3").click(function() { // button function for rewind
            
          var btn = document.getElementById("modal");
               
-            if (btn.value == "Clip 2") {
-              btn.value = "";
+            if (btn.value == "08-21-2020") {
+              btn.value = "08-21-2020";
               btn.innerHTML = '<button id="modtext">Women Worlds 2019</button>';             
               timer.reset();
               video_player.play();
@@ -1502,8 +1504,8 @@ $("#negative3").click(function() { // button function for rewind
               timer.mode(1);
               }
             else {
-              btn.value = "Clip 2";
-              btn.innerHTML =  '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8690</button>';
+              btn.value = "08-21-2020";
+              btn.innerHTML =  '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x21F1;</button>';
               timer.stop();
               video_player.pause();              
               }
@@ -1526,7 +1528,7 @@ $("#negative3").click(function() { // button function for rewind
               }
             else {
               btn.value = "Clip 3";
-              btn.innerHTML = '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8690</button>';
+              btn.innerHTML = '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x21F1;</button>';
               timer.stop();
               video_player.pause();
               }
