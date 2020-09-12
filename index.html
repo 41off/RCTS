@@ -99,7 +99,7 @@ body {
     display: block;
     min-width: 100px;
     left:2%;    
-    bottom: 15%;
+    bottom: 10%;
 }
 
 .timer:hover {
@@ -111,11 +111,11 @@ body {
 .timerbar {
     position: absolute;
     display: block;
-    left: 7%;
-    right: 7%;
-    bottom: 9%;
+    left: 12%;
+    right: 18%;
+    bottom: 3%;
     height: 6%;
-    width:86%;
+    width:70%;
     opacity: .25;
     transition: opacity 30s;
     background-color: transparent;
@@ -148,7 +148,7 @@ body {
     background-color: black;
     border-radius: 12px;
     font-family: "Arial Narrow", Arial, sans-serif;
-    font-size: 16px;
+    font-size: 100%;
     color: white;
     opacity: 1;
     transition: opacity 3s;
@@ -171,7 +171,7 @@ body {
 .timerbutton {
     text-align: center;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 100%;
     line-height:2px;
     margin: 0px 0px;
     margin-top: 4px;
@@ -179,7 +179,7 @@ body {
     padding-bottom:1px;
     padding-left:3px;
     padding-right:3px;
-    width: 62px; 
+    width: 65px; 
     height: 30px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
@@ -194,6 +194,7 @@ body {
     border-color: transparent;
     border-radius: 10px;
     border-style:double;
+    width: 55px;
 }
 
 .timerbutton1:hover {
@@ -275,7 +276,7 @@ body {
 
 .timerbutton .tbtext {
   visibility: hidden;
-  width: 180px;
+  width: 170px;
   height:50px;
   background-color: black;
   border-color: silver;
@@ -302,6 +303,7 @@ body {
 }
 
 #timerbuttonreset {
+    width: 70px;
     background-color: transparent;
     font-weight: normal;
     color: white; 
@@ -323,7 +325,7 @@ body {
     border-color: transparent;
     border-radius: 10px;
     border-style:double;
-    width: 75px; height: 30px;
+    width: 50px; height: 30px;
 }
 
 .timerbutton3:hover {
@@ -354,6 +356,7 @@ body {
     border-color: transparent;
     border-radius: 10px;
     border-style:double;
+    width: 55px;
 }
 
 #speed4x:hover {
@@ -369,6 +372,7 @@ body {
     border-color: transparent;
     border-radius: 10px;
     border-style:double;
+    width: 55px;
 }
 
 #speed16x:hover {
@@ -384,7 +388,7 @@ body {
     border-color: transparent;
     border-radius: 10px;
     border-style:double;
-    width: 130px;
+    width: 100px;
 }
 
 #timerbutton5:hover {
@@ -399,7 +403,7 @@ body {
     border-color: lime;
     border-radius: 10px;
     border-style:double;
-    width: 40x;
+    width: 45px;
     Margin: auto;
 }
 
@@ -436,48 +440,6 @@ body {
   margin-top: 0%;
 }
 
-.controls{
-    position:absolute;
-    text-align:center;
-    left: 1.75%;
-    padding-top: 0px;
-    padding-bottom:3px;
-    padding-left: 2px;
-    background-color: transparent;
-    border: 3px;
-    border-color: silver;
-    border-radius: 12px;
-    border-style: double;
-    height:45%;
-    width: 8%;
-    font-family: "Arial Narrow", Arial, sans-serif;
-    font-size: 18px;
-    color: white;
-    opacity: .15;
-    transition: opacity 10s;
-    bottom: 25%;
-    /* top: 20% */
--webkit-animation: fadeout 15s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadeout 15s; /* Firefox < 16 */
-        -ms-animation: fadeout 15s; /* Internet Explorer */
-         -o-animation: fadeout 15s; /* Opera < 12.1 */
-            animation: fadeout 15s  
-  
--webkit-animation: fadein 15s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 15s; /* Firefox < 16 */
-        -ms-animation: fadein 15s; /* Internet Explorer */
-         -o-animation: fadein 15s; /* Opera < 12.1 */
-            animation: fadein 15s;
-}
-
-.controls:hover {
- background-color: #C0C0C0;
- border-color: lime;
- opacity: 1;
- color: black;
- transition: opacity 2s;
-}
-
 .playlist {
     display:inline-block;
     position:absolute;
@@ -488,12 +450,12 @@ body {
     background-color: transparent;
     border: 3px;
     border-color: silver;
-    border-radius: 12px;
+    border-radius: 7%;
     border-style: double;
-    height:55%;
+    height:60%;
     width:9%;
     font-family: "Arial Narrow", Arial, sans-serif;
-    font-size: 18px;
+    font-size: 80%;
     line-height:22px;
     color: white;
     opacity: .15;
@@ -527,7 +489,7 @@ body {
 .playlistbutton {
     text-align: left;
     background-color: transparent;
-    font-size: 15px;
+    font-size: 120%;
     margin: 0px 0px;
     padding-top:2px;
     padding-bottom:2px;
@@ -579,6 +541,49 @@ body {
   visibility: visible;
 }
 
+.controls{
+    position:absolute;
+    text-align:center;
+    left: 1.75%;
+    padding-top: 1%;
+    padding-bottom:2%;
+    padding-left: .3%;
+    padding-right: .3%;
+    background-color: transparent;
+    border: 2%;
+    border-color: silver;
+    border-radius: 7%;
+    border-style: double;
+    height:45%;
+    width:9%;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 125%;
+    color: white;
+    opacity: .15;
+    transition: opacity 10s;
+    bottom: 20%;
+    /* top: 20% */
+-webkit-animation: fadeout 15s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeout 15s; /* Firefox < 16 */
+        -ms-animation: fadeout 15s; /* Internet Explorer */
+         -o-animation: fadeout 15s; /* Opera < 12.1 */
+            animation: fadeout 15s  
+  
+-webkit-animation: fadein 15s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 15s; /* Firefox < 16 */
+        -ms-animation: fadein 15s; /* Internet Explorer */
+         -o-animation: fadein 15s; /* Opera < 12.1 */
+            animation: fadein 15s;
+}
+
+.controls:hover {
+ background-color: #C0C0C0;
+ border-color: lime;
+ opacity: 1;
+ color: black;
+ transition: opacity 2s;
+}
+
 #modal {
     visibility: hidden;
    
@@ -590,7 +595,7 @@ body {
     border:2px transparent solid;
     border-radius: 10px;
     background-color: transparent;
-    font-size:16px;
+    font-size:100%;
     font-family:"Verdana";
     color:white;
     text-align:center;
@@ -604,7 +609,7 @@ body {
     padding-left: 2px;
     padding-bottom: 0px;    
     min-width: 150px;       
-    bottom: 15%;
+    bottom: 10%;
 }
 
 #modtext:hover {
@@ -624,21 +629,20 @@ body {
     background-color: black; 
     color: white;
     border-color:  aqua;
-    border-radius: 10px;
+    border-radius: 8px;
     border-style:double;
     text-align: center;
     text-decoration: none;
-    font-size: 13px;
-    line-height:2px;
-    margin: 4px 4px;
-    padding-top:1px;
-    padding-bottom:1px;
-    width: 30px; 
-    height: 30px;
+    font-size: 100%;
+    font-weight:bolder;
+    padding-bottom:1%;
+    margin: 5% 5%;
+    width: 35%; 
+    height: 15%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    border: 4px;
+    border: 2%
 }
 
 .zoomin:hover {
@@ -651,21 +655,20 @@ body {
     background-color: black; 
     color: white;
     border-color:  aqua;
-    border-radius: 10px;
+    border-radius: 8px;
     border-style:double;
     text-align: center;
     text-decoration: none;
-    font-size: 13px;
-    line-height:2px;
-    margin: 4px 4px;
-    padding-top:1px;
-    padding-bottom:1px;
-    width: 30px; 
-    height: 30px;
+    font-size: 100%;
+    font-weight:bolder;
+    padding-bottom:2%;
+    margin: 5% 5%;
+    width: 35%; 
+    height: 15%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    border: 4px;
+    border: 2%
 }
 
 .zoomout:hover {
@@ -678,21 +681,21 @@ body {
     background-color: black; 
     color: white;
     border-color:  aqua;
-    border-radius: 10px;
+    border-radius: 8px;
     border-style:double;
     text-align: center;
     text-decoration: none;
-    font-size: 13px;
-    line-height:2px;
-    margin: 4px 4px;
-    padding-top:1px;
-    padding-bottom:1px;
-    width: 30px; 
-    height: 30px;
+    font-size: 100%;
+    font-weight:bolder;
+    padding-bottom:2%;
+    margin: 5% 5%;
+    width: 35%; 
+    height: 15%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    border: 4px;
+    border: 2%
+;
 }
 
 .left:hover {
@@ -705,21 +708,20 @@ body {
     background-color: black; 
     color: white;
     border-color:  aqua;
-    border-radius: 10px;
+    border-radius: 8px;
     border-style:double;
     text-align: center;
     text-decoration: none;
-    font-size: 13px;
-    line-height:2px;
-    margin: 4px 4px;
-    padding-top:1px;
-    padding-bottom:1px;
-    width: 30px; 
-    height: 30px;
+    font-size: 100%;
+    font-weight:bolder;
+    padding-bottom:2%;
+    margin: 5% 5%;
+    width: 35%; 
+    height: 15%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    border: 4px;
+    border: 2%
 }
 
 .right:hover {
@@ -732,21 +734,20 @@ body {
     background-color: black; 
     color: white;
     border-color:  aqua;
-    border-radius: 10px;
+    border-radius: 8px;
     border-style:double;
     text-align: center;
     text-decoration: none;
-    font-size: 13px;
-    line-height:2px;
-    margin: 4px 4px;
-    padding-top:1px;
-    padding-bottom:1px;
-    width: 30px; 
-    height: 30px;
+    font-size: 100%;
+    font-weight:bolder;
+    padding-bottom:2%;
+    margin: 5% 5%;
+    width: 35%; 
+    height: 15%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    border: 4px;
+    border: 2%
 }
 
 .up:hover {
@@ -759,21 +760,20 @@ body {
     background-color: black; 
     color: white;
     border-color:  aqua;
-    border-radius: 10px;
+    border-radius: 8px;
     border-style:double;
     text-align: center;
     text-decoration: none;
-    font-size: 13px;
-    line-height:2px;
-    margin: 4px 4px;
-    padding-top:1px;
-    padding-bottom:1px;
-    width: 30px; 
-    height: 30px;
+    font-size: 100%;
+    font-weight:bolder;
+    padding-bottom:2%;
+    margin: 5% 5%;
+    width: 35%; 
+    height: 15%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    border: 4px;
+    border: 2%
 }
 
 .down:hover {
@@ -786,21 +786,20 @@ body {
     background-color: black; 
     color: white;
     border-color:  aqua;
-    border-radius: 10px;
+    border-radius: 8px;
     border-style:double;
     text-align: center;
     text-decoration: none;
-    font-size: 13px;
-    line-height:2px;
-    margin: 4px 4px;
-    padding-top:1px;
-    padding-bottom:1px;
-    width: 30px; 
-    height: 30px;
+    font-size: 100%;
+    font-weight:bolder;
+    padding-bottom:2%;
+    margin: 5% 5%;
+    width: 35%; 
+    height: 15%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    border: 4px;
+    border: 2%
 }
 
 .rotateleft:hover {
@@ -813,21 +812,20 @@ body {
     background-color: black; 
     color: white;
     border-color:  aqua;
-    border-radius: 10px;
+    border-radius: 8px;
     border-style:double;
     text-align: center;
     text-decoration: none;
-    font-size: 13px;
-    line-height:2px;
-    margin: 4px 4px;
-    padding-top:1px;
-    padding-bottom:1px;
-    width: 30px; 
-    height: 30px;
+    font-size: 100%;
+    font-weight:bolder;
+    padding-bottom:2%;
+    margin: 5% 5%;
+    width: 35%; 
+    height: 15%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    border: 4px;
+    border: 2%
 }
 
 .rotateright:hover {
@@ -837,28 +835,24 @@ body {
 }
 
 .reset {
-    border-width: 4px;
     background-color: black; 
     color: white;
-    border-color:  inherit;
-    border-radius: 10px;
-    border-style:none;
+    border-color:  aqua;
+    border-radius: 8px;
+    border-style:double;
     text-align: center;
     text-decoration: none;
-    font-size: 13px;
-    line-height:2px;
-    margin-top:4px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    width: 65px;
-    height: 30px;
-    -webkit-transition-duration: 0.4s;
+    font-size: 100%;
+    line-height:1%;
+    margin: 5% 5%;
+    padding-top:5%;
+    padding-bottom:5%;
+    width: 80%; 
+    height: 12%;
+    -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    margin-bottom: ;
-/* Safari */
-    margin-left: 0px;
-    margin-right: 0px;
+    border: 2%;
 }
 
 .reset:hover {
@@ -928,7 +922,7 @@ ul{list-style-type: disc; color:red
          <div class="timerbar" style="text-align:center">
            <span class="closebtn2">&#11097;</span>
             <button class="timerbutton" id="timerbuttonreset" onClick="multiReset()">&#x21F1;Reset</button> 
-            <button id="timerbutton5" class="timerbutton" onClick="multiStart()" value="Play">Toggle Play/Pause<span class="tbtext">This Video Player seems to function better with Chrome browser.</span></button>
+            <button id="timerbutton5" class="timerbutton" onClick="multiStart()" value="Play">Play/Pause<span class="tbtext">This Video Player seems to function better with Chrome browser.</span></button>
             <button class="timerbutton" id="timerbutt1_8" onClick="multiSlow()" value="+1/8X">+1/8X<span class="tbtext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click twice to initiate.</span></button>
             <button class="timerbutton" id="timerbutt1_16" onClick="multiSuperSlow()" value="+1/16x">+1/16X</button> 
             <button class="timerbutton timerbutton1" id="negative2">-1/8X<span class="tb1text">Click blue "Pause" button to the left first. Click here for 20" rewind loop, wait for completion! Then re-click or choose other player button.</span></button>
