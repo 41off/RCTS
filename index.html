@@ -931,8 +931,8 @@ ul{list-style-type: disc; color:red
             <button class="timerbutton" id="speed16x" onClick="multiSupFwd()" value="16X">+16X</button>                       
             <button class="timerbutton timerbutton1" id="negative3">-4X<span class="tb1text">Click blue "Pause" button to the left first. Click here for 20" rewind loop, wait for completion! Then re-click or choose other player button.</span></button>
             <button class="timerbutton" id="timerbuttonreset" onclick="on0()">Repeat</button> 
-            <button class="timerbutton timerbutton3" onClick="onVideoNext()">Next</button>
-            <button class="timerbutton timerbutton3" onClick="onVideoBack()">Prior</button>
+            <button class="timerbutton timerbutton3" onClick="onVideoNext()">Prior</button>
+            <button class="timerbutton timerbutton3" onClick="onVideoBack()">Next</button>
             <button class="timerbutton timerbutton6" href="#" onclick='window.open("https://41off.github.io/RCTS/");return false;'>[\+/]<span class="tbtext">&nbsp;&nbsp;Click to open full seperate window.</span></button>
           </div> 
                
@@ -951,18 +951,19 @@ ul{list-style-type: disc; color:red
       <span class="closebtn2">&#11097;</span>
           <center>Playlist<br>Click &#x21A1; Twice<br></center>
             <left>
-               <button class="playlistbutton" onclick="on0()"><li>08-21-2020</button>
-               <button class="playlistbutton" onclick="on1()"><li>09-04-2020</button>
+               <button class="playlistbutton" onclick="on3()"><li>08-27-2021-Rd1</button>
                <button class="playlistbutton" onclick="on2()"><li>10-17-2020</button>
-               <button class="playlistbutton" onclick="on3()"><li>Clip 4</button>
-               <button class="playlistbutton" onclick="on4()"><li>Clip 5</button>
-               <button class="playlistbutton" onclick="on5()"><li>Clip 6</button>
-               <button class="playlistbutton" onclick="on6()"><li>Clip 7</button>
-               <button class="playlistbutton" onclick="on7()"><li>Clip 8</button>
-               <button class="playlistbutton" onclick="on8()"><li>Clip 9</button>
-               <button class="playlistbutton" onclick="on9()"><li>Clip 10</button>
-               <button class="playlistbutton" onclick="on10()"><li>Clip 11</button>
-               <button class="playlistbutton" onclick="on11()"><li>Clip 12</button>
+               <button class="playlistbutton" onclick="on1()"><li>09-04-2020</button>
+               <button class="playlistbutton" onclick="on0()"><li>08-21-2020</button>
+               <button class="playlistbutton" onclick="on4()"><li>Clip 4</button>
+               <button class="playlistbutton" onclick="on5()"><li>Clip 5</button>
+               <button class="playlistbutton" onclick="on6()"><li>Clip 6</button>
+               <button class="playlistbutton" onclick="on7()"><li>Clip 7</button>
+               <button class="playlistbutton" onclick="on8()"><li>Clip 8</button>
+               <button class="playlistbutton" onclick="on9()"><li>Clip 9</button>
+               <button class="playlistbutton" onclick="on10()"><li>Clip 10</button>
+               <button class="playlistbutton" onclick="on11()"><li>Clip 11</button>
+               <button class="playlistbutton" onclick="on12()"><li>Clip 12</button>
                <button class="playlistbutton" href="#" onclick="parent.location='https://sites.google.com/a/41off.com/rcts/media/rcts'"><li>HOME</li><span class="plbtext">Click to open this page in Victory Lake.</span></button>
            </left>
            
@@ -1312,6 +1313,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
         var video_directory = ['https://player.vimeo.com/external/451463939.hd.mp4?s=012061f3191aa260696f4f2e65f614f1a61fbbe1&profile_id=175',
                                'https://player.vimeo.com/external/456375651.hd.mp4?s=7520c7b080e81824533a96ca2fb174961242841d&profile_id=175',
                                'https://player.vimeo.com/external/469608293.hd.mp4?s=755a5ea036880a3078ef8ab99f1235d35131ea72&profile_id=175',
+                               'https://www.dropbox.com/s/m9tdj57v3u6ngu1/X08-27-2021-Rd1.mp4?raw=1',
                                'https://player.vimeo.com/external/378512202.hd.mp4?s=9e492d9f40f3e3d6292410d2d1146be1fa2cc62d&profile_id=175',
                                'https://player.vimeo.com/external/408138063.hd.mp4?s=ed3a97ca55309d23e5a943c0fbcdeae001a54d27&profile_id=175',
                                'https://player.vimeo.com/external/385630268.hd.mp4?s=728efa9bd7135003708afd44f0e11ac3eba6581f&profile_id=175',
@@ -1467,16 +1469,16 @@ $("#negative3").click(function() { // button function for rewind
                        
         var btn = document.getElementById("modal");
       
-            if (btn.value == "08-21-2020") {
-              btn.value = "08-21-2020";
-              btn.innerHTML = '<button id="modtext">08-21-2020</button>';              
+            if (btn.value == "08-20-2020") {
+              btn.value = "08-20-2020";
+              btn.innerHTML = '<button id="modtext">08-20-2020</button>';              
               timer.reset();
               video_player.play();
               timer.start(10);
               timer.mode(1);
               }
             else {
-              btn.value = "08-21-2020";
+              btn.value = "08-20-2020";
               btn.innerHTML = '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x21F1;</button>';
               timer.stop();
               video_player.pause();
@@ -1491,7 +1493,7 @@ $("#negative3").click(function() { // button function for rewind
          var btn = document.getElementById("modal");
               
             if (btn.value == "09-04-2020") {
-              btn.value = "09-04-2020";
+              btn.value = "09-04-2020"              
               btn.innerHTML = '<button id="modtext">09-04-2020</button>';             
               timer.reset();
               video_player.play();
@@ -1514,7 +1516,7 @@ $("#negative3").click(function() { // button function for rewind
           var btn = document.getElementById("modal");
       
             if (btn.value == "10-17-2020") {
-              btn.value = "";
+              btn.value = "10-17-2020";
               btn.innerHTML = '<button id="modtext">10-17-2020</button>';
               timer.reset();
               video_player.play();
@@ -1536,16 +1538,16 @@ $("#negative3").click(function() { // button function for rewind
             
            var btn = document.getElementById("modal");
       
-            if (btn.value == "Clip 4") {
+            if (btn.value == "08-27-2021-Rd1") {
               btn.value = "";
-              btn.innerHTML = '<button id="modtext">Clip 4</button>';
+              btn.innerHTML = '<button id="modtext">08-27-2021-Rd1</button>';
               timer.reset();
               video_player.play();
               timer.start(10);
               timer.mode(1);
               }
             else {
-              btn.value = "Clip 4";
+              btn.value = "08-27-2021-Rd1";
               btn.innerHTML = '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8690</button>';              
               timer.stop();
               video_player.pause();
