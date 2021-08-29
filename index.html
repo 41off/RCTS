@@ -951,7 +951,7 @@ ul{list-style-type: disc; color:red
       <span class="closebtn2">&#11097;</span>
           <center>Playlist<br>Click &#x21A1; Twice<br></center>
             <left>
-               <button class="playlistbutton" onclick="on3()"><li>08-27-2021-Rd1</button>
+               <button class="playlistbutton" onclick="on3()"><li>08-27-2021-Rd1-S1</button>
                <button class="playlistbutton" onclick="on2()"><li>10-17-2020</button>
                <button class="playlistbutton" onclick="on1()"><li>09-04-2020</button>
                <button class="playlistbutton" onclick="on0()"><li>08-21-2020</button>
@@ -1313,7 +1313,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
         var video_directory = ['https://player.vimeo.com/external/451463939.hd.mp4?s=012061f3191aa260696f4f2e65f614f1a61fbbe1&profile_id=175',
                                'https://player.vimeo.com/external/456375651.hd.mp4?s=7520c7b080e81824533a96ca2fb174961242841d&profile_id=175',
                                'https://player.vimeo.com/external/469608293.hd.mp4?s=755a5ea036880a3078ef8ab99f1235d35131ea72&profile_id=175',
-                               'https://www.dropbox.com/s/m9tdj57v3u6ngu1/X08-27-2021-Rd1.mp4?raw=1',
+                               'https://www.dropbox.com/s/rumptfpm2rwijie/X08-27-2021-Rd1-S1.mp4?raw=1',
                                'https://player.vimeo.com/external/378512202.hd.mp4?s=9e492d9f40f3e3d6292410d2d1146be1fa2cc62d&profile_id=175',
                                'https://player.vimeo.com/external/408138063.hd.mp4?s=ed3a97ca55309d23e5a943c0fbcdeae001a54d27&profile_id=175',
                                'https://player.vimeo.com/external/385630268.hd.mp4?s=728efa9bd7135003708afd44f0e11ac3eba6581f&profile_id=175',
@@ -1545,16 +1545,16 @@ $("#negative3").click(function() { // button function for rewind
             
            var btn = document.getElementById("modal");
       
-            if (btn.value == "08-27-2021-Rd1") {
-              btn.value = "";
-              btn.innerHTML = '<button id="modtext">08-27-2021-Rd1</button>';
+            if (btn.value == "08-27-2021-Rd1-S1") {
+              btn.value = "08-27-2021-Rd1-S1";
+              btn.innerHTML = '<button id="modtext">08-27-2021-Rd1-S1</button>';
               timer.reset();
               video_player.play();
               timer.start(10);
               timer.mode(1);
               }
             else {
-              btn.value = "08-27-2021-Rd1";
+              btn.value = "08-27-2021-Rd1-S1";
               btn.innerHTML = '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8690</button>';              
               timer.stop();
               video_player.pause();
