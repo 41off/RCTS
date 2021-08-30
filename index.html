@@ -90,7 +90,7 @@ body {
     font-size:100%;
     font-family:"Verdana";
     text-align:left;    
-    height: 3%;
+    height: 2%;
     width:5%;    
     padding-top: 2px;
     padding-left: 5px;
@@ -111,13 +111,13 @@ body {
 .timerbar {
     position: absolute;
     display: block;
-    left: 11%;
-    right: 11%;
+    left: 20%;
+    right: 20%;
     bottom: 7%;
-    height: 6%;
-    width:78%;
+    height: 4%;
+    width:60%;
     opacity: .25;
-    transition: opacity 30s;
+    transition: opacity 15s;
     background-color: transparent;
     border: 2px;
     border-color: transparent;
@@ -130,17 +130,17 @@ body {
             animation: fadeout 15s  
   
 -webkit-animation: fadein 15s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 15s; /* Firefox < 16 */
-        -ms-animation: fadein 15s; /* Internet Explorer */
-         -o-animation: fadein 15s; /* Opera < 12.1 */
-            animation: fadein 15s;
+       -moz-animation: fadein 5s; /* Firefox < 16 */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
 }
 
 .timerbar:hover {
     background-color: #a8a9ad;
     border-color: white;
-    opacity: 1;
-    transition: opacity 2s;
+    opacity: .7;
+    transition: opacity 3s;
 }
 
 .timercontrol {
@@ -450,10 +450,10 @@ body {
     background-color: transparent;
     border: 3px;
     border-color: silver;
-    border-radius: 7%;
+    border-radius: 5%;
     border-style: double;
     height:60%;
-    width:11%;
+    width:8%;
     font-family: "Arial Narrow", Arial, sans-serif;
     font-size: 100%;
     line-height:22px;
@@ -953,11 +953,11 @@ ul{list-style-type: disc; color:red
             <left>
                <button class="playlistbutton" onclick="on3()"><li>08-27-2021-Rd1-S1</button>
                <button class="playlistbutton" onclick="on4()"><li>08-27-2021-Rd1-S2</button>
+               <button class="playlistbutton" onclick="on5()"><li>08-27-2021-Rd2-S1</button>
+               <button class="playlistbutton" onclick="on6()"><li>08-27-2021-Rd2-S2</button>
                <button class="playlistbutton" onclick="on2()"><li>10-17-2020</button>
                <button class="playlistbutton" onclick="on1()"><li>09-04-2020</button>
-               <button class="playlistbutton" onclick="on0()"><li>08-21-2020</button>
-               <button class="playlistbutton" onclick="on5()"><li>Clip 5</button>
-               <button class="playlistbutton" onclick="on6()"><li>Clip 6</button>
+               <button class="playlistbutton" onclick="on0()"><li>08-21-2020</button>               
                <button class="playlistbutton" onclick="on7()"><li>Clip 7</button>
                <button class="playlistbutton" onclick="on8()"><li>Clip 8</button>
                <button class="playlistbutton" onclick="on9()"><li>Clip 9</button>
@@ -1315,6 +1315,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
                                'https://player.vimeo.com/external/469608293.hd.mp4?s=755a5ea036880a3078ef8ab99f1235d35131ea72&profile_id=175',
                                'https://www.dropbox.com/s/rumptfpm2rwijie/X08-27-2021-Rd1-S1.mp4?raw=1',
                                'https://www.dropbox.com/s/ubdoexjd5tb5nbk/X08-27-2021-Rd1-S2.mp4?raw=1',
+                               'https://www.dropbox.com/s/fgrbp8uyo6vwl6j/X08-27-2021-Rd2-S1.mp4?raw=1',
                                'https://player.vimeo.com/external/408138063.hd.mp4?s=ed3a97ca55309d23e5a943c0fbcdeae001a54d27&profile_id=175',
                                'https://player.vimeo.com/external/385630268.hd.mp4?s=728efa9bd7135003708afd44f0e11ac3eba6581f&profile_id=175',
                                'https://player.vimeo.com/external/411261320.hd.mp4?s=48a58be88edb8734c3949ecff65439904b407f20&profile_id=175'
@@ -1565,16 +1566,16 @@ $("#negative3").click(function() { // button function for rewind
                         
            var btn = document.getElementById("modal");
       
-            if (btn.value == "08-27-2021-Rd-S2") {
-              btn.value = "08-27-2021-Rd-S2";
-              btn.innerHTML = '<button id="modtext">08-27-2021-Rd-S2</button>';
+            if (btn.value == "08-27-2021-Rd1-S2") {
+              btn.value = "08-27-2021-Rd1-S2";
+              btn.innerHTML = '<button id="modtext">08-27-2021-Rd1-S2</button>';
               timer.reset();
               video_player.play();
               timer.start(10);
               timer.mode(1);
               }
             else {
-              btn.value = "08-27-2021-Rd-S2";
+              btn.value = "08-27-2021-Rd1-S2";
               btn.innerHTML = '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8690</button>';
               timer.stop();
               video_player.pause();              
@@ -1588,16 +1589,16 @@ $("#negative3").click(function() { // button function for rewind
                         
           var btn = document.getElementById("modal");
       
-            if (btn.value == "Clip 6") {
-              btn.value = "";
-              btn.innerHTML = '<button id="modtext">Clip 6</button>';
+            if (btn.value == "08-27-2021-Rd2-S1") {
+              btn.value = "08-27-2021-Rd2-S1";
+              btn.innerHTML = '<button id="modtext">08-27-2021-Rd2-S1</button>';
               timer.reset();
               video_player.play();
               timer.start(10);
               timer.mode(1);
               }
             else {
-              btn.value = "Clip 6";
+              btn.value = "08-27-2021-Rd2-S1";
               btn.innerHTML = '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8690</button>';
               timer.stop();
               video_player.pause();
@@ -1611,16 +1612,16 @@ $("#negative3").click(function() { // button function for rewind
                         
           var btn = document.getElementById("modal");
       
-            if (btn.value == "Clip 7") {
-              btn.value = "";
-              btn.innerHTML = '<button id="modtext">Clip 7</button>';
+            if (btn.value == "08-27-2021-Rd2-S2") {
+              btn.value = "08-27-2021-Rd2-S2";
+              btn.innerHTML = '<button id="modtext">08-27-2021-Rd2-S2</button>';
               timer.reset();
               video_player.play();
               timer.start(10);
               timer.mode(1);
               }
             else {
-              btn.value = "Clip 7";
+              btn.value = "08-27-2021-Rd2-S2";
               btn.innerHTML = '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8690</button>';
               timer.stop();
               video_player.pause();
