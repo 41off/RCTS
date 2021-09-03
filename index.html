@@ -3,7 +3,7 @@
     <title>RCTS Video Player</title>
     
 <meta  name="viewport" content="width=device-width, initial-scale=1"/>
- <link rel='icon' href='https://github.com/41off/bin/blob/master/favicon.ico' type='image/x-icon'/ >
+ <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
 
 <body>
 
@@ -86,19 +86,19 @@ body {
     border:2px #666666 solid;
     border-radius: 8px;
     background-color: black;
-    line-height:16px;
-    font-size:100%;
+    line-height:22px;
+    font-size:18px;
     font-family:"Verdana";
     text-align:left;    
-    height: 3%;
-    width:5%;    
-    padding-top: 12px;
+    height: 26px;
+    width:100px;    
+    padding-top: 2px;
     padding-left: 5px;
     padding-right:0px;
-    margin-top: 8px;
+    margin-bottom: 0px;
     display: block;
-    min-width: 100px;
-    left:25px;    
+    min-width: 110px;
+    left:1%;    
     bottom: 14%;
 }
 
@@ -111,13 +111,12 @@ body {
 .timerbar {
     position: absolute;
     display: block;
-    left: 11%;
-    right: 11%;
-    bottom: 7%;
-    height: 38px;
-    width:78%;
+    left: 25%;
+    bottom: 80px;
+    height: 36px;
+    width: 900px;
     opacity: .25;
-    transition: opacity 30s;
+    transition: opacity 15s;
     background-color: transparent;
     border: 2px;
     border-color: transparent;
@@ -130,17 +129,17 @@ body {
             animation: fadeout 15s  
   
 -webkit-animation: fadein 15s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 15s; /* Firefox < 16 */
-        -ms-animation: fadein 15s; /* Internet Explorer */
-         -o-animation: fadein 15s; /* Opera < 12.1 */
-            animation: fadein 15s;
+       -moz-animation: fadein 5s; /* Firefox < 16 */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
 }
 
 .timerbar:hover {
     background-color: #a8a9ad;
     border-color: white;
-    opacity: 1;
-    transition: opacity 2s;
+    opacity: .7;
+    transition: opacity 3s;
 }
 
 .timercontrol {
@@ -443,24 +442,25 @@ body {
 .playlist {
     display:inline-block;
     position:absolute;
-    right: 0.5%;
+    right: 0.25%;
     padding-top: 0px;
     padding-bottom:0px;
     padding-left:3px;
     background-color: transparent;
     border: 3px;
     border-color: silver;
-    border-radius: 10px;
+    border-radius: 8px;
     border-style: double;
     height:500px;
     width:100px;
     font-family: "Arial Narrow", Arial, sans-serif;
-    font-size: 100%;
-    line-height:22px;
+    font-size: 16px;
+    font-weight:bold;
+    line-height:24px;
     color: white;
-    opacity: .05;
-    transition: opacity 10s;
-    top: 20%;
+    opacity: .1;
+    transition: opacity 5s;
+    bottom: 200px;
     /*top: 35% */
 
 -webkit-animation: fadeout 15s; /* Safari, Chrome and Opera > 12.1 */
@@ -489,13 +489,13 @@ body {
 .playlistbutton {
     text-align: left;
     background-color: transparent;
-    font-size: 100%;
-    margin-left: 5%; 
-    padding-top:1%;
-    padding-bottom:1%;
-    padding-left:1%;
-    width: 98%; 
-    height: 6.5%;
+    font-size: 14px;
+    margin-left: 2px; 
+    padding-top:4px;
+    padding-bottom:4px;
+    padding-left:1px;
+    width: 100px; 
+    height: 22px;
     cursor: pointer;
     color:white;
     border-color:transparent;
@@ -544,24 +544,25 @@ body {
 .controls{
     position:absolute;
     text-align:center;
-    left: 25px;
-    padding-top: 0px;
-    padding-bottom:3px;
-    padding-left: 2px;
+    left: 1%;
+    padding-top: 0.25%;
+    padding-bottom:2%;
+    padding-left: .3%;
+    padding-right: .3%;
     background-color: transparent;
     border: 3px;
-    border-color: lime;
-    border-radius: 12px;
+    border-color: silver;
+    border-radius: 8px;
     border-style: double;
-    height:320px;
-    width: 100px;
+    height:350px;
+    width:100px;
     font-family: "Arial Narrow", Arial, sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     color: white;
-    opacity: .15;
+    opacity: .05;
     transition: opacity 10s;
-    bottom: 100px;
-    top: 20%;
+    bottom: 200px;
+    /* top: 20% */
 -webkit-animation: fadeout 15s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadeout 15s; /* Firefox < 16 */
         -ms-animation: fadeout 15s; /* Internet Explorer */
@@ -601,14 +602,14 @@ body {
     text-decoration:blink;
     display: block;
     align-items: center;    
-    right: 15px;    
+    right: 1%;    
     height: 4%;
     width: 7%;    
     padding-top: 0px;
     padding-left: 2px;
     padding-bottom: 0px;    
     min-width: 150px;       
-    bottom: 15%;
+    bottom: 14%;
 }
 
 #modtext:hover {
@@ -637,7 +638,7 @@ body {
     padding-bottom:1%;
     margin: 5% 5%;
     width: 35%; 
-    height: 15%;
+    height: 10%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
@@ -663,7 +664,7 @@ body {
     padding-bottom:2%;
     margin: 5% 5%;
     width: 35%; 
-    height: 15%;
+    height: 10%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
@@ -689,7 +690,7 @@ body {
     padding-bottom:2%;
     margin: 5% 5%;
     width: 35%; 
-    height: 15%;
+    height: 10%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
@@ -716,7 +717,7 @@ body {
     padding-bottom:2%;
     margin: 5% 5%;
     width: 35%; 
-    height: 15%;
+    height: 10%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
@@ -742,7 +743,7 @@ body {
     padding-bottom:2%;
     margin: 5% 5%;
     width: 35%; 
-    height: 15%;
+    height: 10%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
@@ -768,7 +769,7 @@ body {
     padding-bottom:2%;
     margin: 5% 5%;
     width: 35%; 
-    height: 15%;
+    height: 10%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
@@ -794,7 +795,7 @@ body {
     padding-bottom:2%;
     margin: 5% 5%;
     width: 35%; 
-    height: 15%;
+    height: 10%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
@@ -820,7 +821,7 @@ body {
     padding-bottom:2%;
     margin: 5% 5%;
     width: 35%; 
-    height: 15%;
+    height: 10%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
@@ -846,7 +847,7 @@ body {
     margin: 5% 5%;
     padding-top:5%;
     padding-bottom:5%;
-    width: 80%; 
+    width: 90%; 
     height: 12%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
@@ -887,21 +888,21 @@ ul li{float: center;
       width: 100%;  /*helps to determine number of columns, for instance 33.3% displays 3 columns*/
 }
 
-ul{list-style-type: disc; color:red
-}
- li a:link {font-size: 12px; color:#eeeedd; font-weight:bold; background:transparent; padding:2px; display:block; font-family: "Arial Narrow";}
+ul{list-style-type: disc; color:#eeeedd}
+
+ li a:link {font-size: 16px; color:lime; font-weight:bold; background:transparent; padding:2px; display:block; font-family: "Arial Narrow";}
  
- li a:active {color:red; font-family:"Arial Narrow";}
+ li a:active {color:lime; font-family:"Arial Narrow";}
  
  li a:hover {color:blue; font-family: "Arial Narrow";
-            background:transparent; text-decoration:underline;}
+            background:transparent; text-decoration:underline; text-transform:uppercase; text-decoration:blink}
  
  li a:visited {color:green; font-family: "Arial Narrow";
             background:transparent; text-decoration:underline;}
             
 </style>
 </head>
-    
+
 <body onload="onload();">
 
    <div id="stage">
@@ -949,7 +950,8 @@ ul{list-style-type: disc; color:red
      <div class="playlist" style="text-align:left">
       <span class="closebtn2">&#11097;</span>
           <center>Playlist<br>Click &#x21A1; Twice<br></center>
-          <right><br>08-27-2021 &#x21A1;<br></right>
+          <br>
+          <right>&#x21A1;&nbsp;&nbsp;08-27-2021</right>
             <left>
                <button class="playlistbutton" onclick="on3()"><li>Rd1-S1</button>
                <button class="playlistbutton" onclick="on4()"><li>Rd1-S2</button>
@@ -966,7 +968,10 @@ ul{list-style-type: disc; color:red
                <button class="playlistbutton" onclick="on12()"><li>Clip 12</button>
                <button class="playlistbutton" href="#" onclick="parent.location='https://sites.google.com/a/41off.com/rcts/media/rcts'"><li>HOME</li><span class="plbtext">Click to open this page in Victory Lake.</span></button>
            </left>
-      </div>
+           
+      
+                
+   </div>
                
 <script>
 var close = document.getElementsByClassName('closebtn2');
@@ -1313,6 +1318,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
                                'https://www.dropbox.com/s/rumptfpm2rwijie/X08-27-2021-Rd1-S1.mp4?raw=1',
                                'https://www.dropbox.com/s/ubdoexjd5tb5nbk/X08-27-2021-Rd1-S2.mp4?raw=1',
                                'https://www.dropbox.com/s/fgrbp8uyo6vwl6j/X08-27-2021-Rd2-S1.mp4?raw=1',
+                               'https://www.dropbox.com/s/mg1dnwentqq3g0i/X08-27-2021-Rd2-S2.mp4?raw=1',
                                'https://player.vimeo.com/external/408138063.hd.mp4?s=ed3a97ca55309d23e5a943c0fbcdeae001a54d27&profile_id=175',
                                'https://player.vimeo.com/external/385630268.hd.mp4?s=728efa9bd7135003708afd44f0e11ac3eba6581f&profile_id=175',
                                'https://player.vimeo.com/external/411261320.hd.mp4?s=48a58be88edb8734c3949ecff65439904b407f20&profile_id=175'
@@ -1879,3 +1885,4 @@ $(document).ready(function(e)
 
 </body>
 </html>
+
