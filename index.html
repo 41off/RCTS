@@ -1059,10 +1059,12 @@ ul{list-style-type: disc; color:red
                <button class="playlistbutton" onclick="on8()"><li>Rd1-S2</button>
                <button class="playlistbutton" onclick="on9()"><li>Rd2-3-S1</button>
                <button class="playlistbutton" onclick="on10()"><li>Rd2-3-S2</button>
+               <button class="playlistbutton" onclick="on11()"><li>Clip 11</button>
+           <right>&nbsp;&nbsp;&#x21A1;&nbsp;&nbsp;2020</right>
                <button class="playlistbutton" onclick="on2()"><li>10-17-2020</button>
                <button class="playlistbutton" onclick="on1()"><li>09-04-2020</button>
                <button class="playlistbutton" onclick="on0()"><li>08-21-2020</button>             
-               <button class="playlistbutton" onclick="on11()"><li>Clip 11</button>
+               
                <button class="playlistbutton" onclick="on12()"><li>Clip 12</button>
                <button class="playlistbutton" href="#" onclick="parent.location='https://sites.google.com/a/41off.com/rcts/media/rcts'"><li>HOME</li><span class="plbtext">Click to open this page in Victory Lake.</span></button>
            </left>
@@ -1804,7 +1806,7 @@ $("#negative3").click(function() { // button function for rewind
        
           function on10(){
            console.log("10 ended");
-           video_index = 9;
+           video_index = 10;
            video_player.setAttribute("src", video_directory[video_index]);
                       
           var btn = document.getElementById("modal");
@@ -1826,22 +1828,38 @@ $("#negative3").click(function() { // button function for rewind
        }
        
           function on11(){
-            console.log("10 ended");
-             if(video_index = 10){
-                video_index++;
-           }
-            else{
-                video_index = 0;
-            }
-            video_player = document.getElementById("video");
-            video_player.setAttribute("src", video_directory[video_index]);
-            video_player.play();
-           
-           var btn = document.getElementById("modal");
+           console.log("11 ended");
+           video_index = 11;
+           video_player.setAttribute("src", video_directory[video_index]);
+                      
+          var btn = document.getElementById("modal");
+      
+            if (btn.value == "Rd3-S2") {
+              btn.value = "";
+              btn.innerHTML = '<button id="modtext">Rd3-S2</button>';
+              timer.reset();
+              video_player.play();
+              timer.start(10);
+              timer.mode(1);
+              }
+            else {
+              btn.value = "Rd3-S2";
+              btn.innerHTML = '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8690</button>';
+              timer.stop();
+              video_player.pause();
+              }
+       }
+       
+         function on12(){
+           console.log("12 ended");
+           video_index = 12;
+           video_player.setAttribute("src", video_directory[video_index]);
+                      
+          var btn = document.getElementById("modal");
       
             if (btn.value == "Clip 12") {
               btn.value = "";
-              btn.innerHTML = '<button id="modtext">Clip 12</button>';              
+              btn.innerHTML = '<button id="modtext">Clip 12/button>';
               timer.reset();
               video_player.play();
               timer.start(10);
@@ -1853,7 +1871,8 @@ $("#negative3").click(function() { // button function for rewind
               timer.stop();
               video_player.pause();
               }
-        }
+       }
+
         
 </script>
 
