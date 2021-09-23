@@ -1054,13 +1054,14 @@ ul{list-style-type: disc; color:red
                <button class="playlistbutton" onclick="on4()"><li>Rd1-S2</button>
                <button class="playlistbutton" onclick="on5()"><li>Rd2-S1</button>
                <button class="playlistbutton" onclick="on6()"><li>Rd2-S2</button>
+           <right>&nbsp;&nbsp;&#x21A1;&nbsp;&nbsp;09-18-2021</right>
+               <button class="playlistbutton" onclick="on7()"><li>Rd1-S1</button>
+               <button class="playlistbutton" onclick="on8()"><li>Rd1-S2</button>
+               <button class="playlistbutton" onclick="on9()"><li>Rd2-3-S1</button>
+               <button class="playlistbutton" onclick="on10()"><li>Rd2-3-S2</button>
                <button class="playlistbutton" onclick="on2()"><li>10-17-2020</button>
                <button class="playlistbutton" onclick="on1()"><li>09-04-2020</button>
-               <button class="playlistbutton" onclick="on0()"><li>08-21-2020</button>               
-               <button class="playlistbutton" onclick="on7()"><li>Clip 7</button>
-               <button class="playlistbutton" onclick="on8()"><li>Clip 8</button>
-               <button class="playlistbutton" onclick="on9()"><li>Clip 9</button>
-               <button class="playlistbutton" onclick="on10()"><li>Clip 10</button>
+               <button class="playlistbutton" onclick="on0()"><li>08-21-2020</button>             
                <button class="playlistbutton" onclick="on11()"><li>Clip 11</button>
                <button class="playlistbutton" onclick="on12()"><li>Clip 12</button>
                <button class="playlistbutton" href="#" onclick="parent.location='https://sites.google.com/a/41off.com/rcts/media/rcts'"><li>HOME</li><span class="plbtext">Click to open this page in Victory Lake.</span></button>
@@ -1418,6 +1419,9 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
                                'https://www.dropbox.com/s/mg1dnwentqq3g0i/X08-27-2021-Rd2-S2.mp4?raw=1',
                                'https://www.dropbox.com/s/01xxf1vay5y8bup/X09-18-2021-Rd1_S1.mp4?raw=1',
                                'https://www.dropbox.com/s/u7fxw805hld220l/X09-18-2021-Rd1-S2.mp4?raw=1',
+                               'https://www.dropbox.com/s/5wwzd2m5hm8uo0x/X09-18-2021-Rd2-3-S1.mp4?raw=1',
+                               'https://www.dropbox.com/s/534qw0olpmntj40/X09-18-2021-Rd2-3-S2.mp4?raw=1',
+                               'https://www.dropbox.com/s/ix839d9t6mtqv4e/X09-18-2021-Rd3-S2.mp4?raw=1',
                                ];                             
  
   
@@ -1734,16 +1738,16 @@ $("#negative3").click(function() { // button function for rewind
                         
            var btn = document.getElementById("modal");
       
-            if (btn.value == "Clip 8") {
+            if (btn.value == "Rd1-S1") {
               btn.value = "";
-              btn.innerHTML = '<button id="modtext">Clip 8</button>';
+              btn.innerHTML = '<button id="modtext">Rd1-S1</button>';
               timer.reset();
               video_player.play();
               timer.start(10);
               timer.mode(1);
               }
             else {
-              btn.value = "Clip 8";
+              btn.value = "Rd1-S1";
               btn.innerHTML = '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8690</button>';
               timer.stop();
               video_player.pause();
@@ -1758,16 +1762,16 @@ $("#negative3").click(function() { // button function for rewind
             
            var btn = document.getElementById("modal");
       
-            if (btn.value == "Clip 9") {
+            if (btn.value == "Rd1-S2") {
               btn.value = "";
-              btn.innerHTML = '<button id="modtext">Clip 9</button>';              
+              btn.innerHTML = '<button id="modtext">Rd1-S2</button>';              
               timer.reset();
               video_player.play();
               timer.start(10);
               timer.mode(1);
               }
             else {
-              btn.value = "Clip 9";
+              btn.value = "Rd1-S2";
               btn.innerHTML = '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8690</button>';              
               timer.stop();
               video_player.pause();
@@ -1782,16 +1786,16 @@ $("#negative3").click(function() { // button function for rewind
            
           var btn = document.getElementById("modal");
       
-            if (btn.value == "Clip 10") {
+            if (btn.value == "Rd2-3-S1") {
               btn.value = "";
-              btn.innerHTML = '<button id="modtext">Clip 10</button>';
+              btn.innerHTML = '<button id="modtext">Rd2-3-S1</button>';
               timer.reset();
               video_player.play();
               timer.start(10);
               timer.mode(1);
               }
             else {
-              btn.value = "Clip 10";
+              btn.value = "Rd2-3-S1";
               btn.innerHTML = '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8690</button>';
               timer.stop();
               video_player.pause();
@@ -1805,16 +1809,16 @@ $("#negative3").click(function() { // button function for rewind
                       
           var btn = document.getElementById("modal");
       
-            if (btn.value == "Clip 11") {
+            if (btn.value == "Rd2-3-S2") {
               btn.value = "";
-              btn.innerHTML = '<button id="modtext">Clip 11</button>';
+              btn.innerHTML = '<button id="modtext">Rd2-3-S2</button>';
               timer.reset();
               video_player.play();
               timer.start(10);
               timer.mode(1);
               }
             else {
-              btn.value = "Clip 11";
+              btn.value = "Rd2-3-S2";
               btn.innerHTML = '<button id="modtext">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8690</button>';
               timer.stop();
               video_player.pause();
